@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0; /* Removes default margin */
+    font-size: 40px;
+    font-weight: bold;
+    display: inline-block; /* Prevents it from interfering with the flex layout */
+    flex-grow: 1; /* Ensures the h1 takes up space between the image and the menu items */
+    padding: 0; /* Resets padding */
+    text-align: left;
+}
+
+header {
+    display: flex;
+    padding-left: 0;
+    padding-right: 20%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+    justify-content: space-between;
+}
+header img {
+    object-fit: cover; /* Ensures the image scales without distortion */
+    flex-shrink: 0; /* Prevents the image from resizing */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle;
+    margin-right: 2%;
+    padding-left: 17%;
+}
+
+#menuItems {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+#menuItems li {
+    cursor: pointer;
+    transition: color 0.4s;
+}
+  
+#menuItems li:hover {
+    color: #007BFF;
+}
+
+#companyBio img {
+    object-fit: cover; /* Ensures the image scales without distortion */
+    border-radius: 10%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Prevents the image from resizing */
+    width: 18%; /* Set the image width as a percentage */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Optional: Round the edges */
+}
+
+#companyBio {
+    display: flex; /* Enables side-by-side alignment */
+    align-items: flex-start; /* Aligns the image and text to the top */
+    gap: 45px; /* Adds space between the image and text */
+    padding: 8% 20% 6%; /* Adds padding around the section */
+}
+#companyBio .text-container {
+    display: flex;
+    flex-direction: column; /* Stacks the mission statement and bio vertically */
+    gap: 12px; /* Adds space between the mission statement and company bio */
+    flex: 1; /* Allows text to take up the remaining space */
+}
+
+#companyBio p {
+    flex: 1; /* Ensures the text takes up the remaining space */
+    font-family: Monaco, monospace; /* Matches your current font style */
+    line-height: 1.6; /* Adjusts text spacing for better readability */
+}
+@media (max-width: 768px) {
+    #companyBio {
+      flex-direction: column; /* Stacks the image above the text */
+      align-items: center; /* Centers the content */
+    }
+  
+    #companyBio img {
+      width: 60%; /* Resize the image for mobile */
+      margin-bottom: 20px; /* Add spacing below the image */
+    }
+  
+    #companyBio p {
+      text-align: center; /* Centers the text for readability */
+    }
+}
+
+#missionStatement {
+    font-size: 22px;
+    font-family: Monaco, monospace;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: Monaco, monospace;
+}
+
+#Testimonials p {
+    text-align: center;
+    font-size: 20px;
+    margin-right: 20%;
+    padding-left: 20%;
+    margin-top: 50px;
+    font-family: Monaco, monospace;
+}
+
+.quote {
+    font-size: 25px;
+    font-family: Monaco, monospace;
+}
