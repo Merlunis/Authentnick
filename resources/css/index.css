@@ -60,6 +60,30 @@ header img {
     height: auto; /* Maintain aspect ratio */
     border-radius: 15px; /* Optional: Round the edges */
 }
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack header elements vertically */
+        align-items: center; /* Center-aligns content */
+        padding: 10px; /* Adjusts padding for mobile */
+    }
+
+    h1 {
+        text-align: center; /* Centers h1 text on mobile */
+        margin-bottom: 10px; /* Adds space below the h1 */
+        font-size: 20px; /* Reduces font size for smaller screens */
+    }
+
+    #menuItems {
+        justify-content: center; /* Centers menu items */
+        gap: 0.5rem; /* Reduces spacing between menu items */
+        flex-wrap: wrap; /* Allows menu items to wrap if they don't fit */
+    }
+
+    header img {
+        margin-bottom: 10px; /* Adds spacing below the logo */
+        height: 40px; /* Reduces logo size for smaller screens */
+    }
+}
 
 #companyBio {
     display: flex; /* Enables side-by-side alignment */
