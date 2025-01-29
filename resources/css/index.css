@@ -49,30 +49,6 @@ header img {
 #menuItems li:hover {
     color: #007BFF;
 }
-@media (max-width: 768px) {
-    header {
-        flex-direction: column; /* Stack header elements vertically */
-        align-items: center; /* Center-aligns content */
-        padding: 10px; /* Adjusts padding for mobile */
-    }
-
-    h1 {
-        text-align: center; /* Centers h1 text on mobile */
-        margin-bottom: 10px; /* Adds space below the h1 */
-        font-size: 20px; /* Reduces font size for smaller screens */
-    }
-
-    #menuItems {
-        justify-content: center; /* Centers menu items */
-        gap: 0.5rem; /* Reduces spacing between menu items */
-        flex-wrap: wrap; /* Allows menu items to wrap if they don't fit */
-    }
-
-    header img {
-        margin-bottom: 10px; /* Adds spacing below the logo */
-        height: 40px; /* Reduces logo size for smaller screens */
-    }
-}
 
 #companyBio img {
     object-fit: cover; /* Ensures the image scales without distortion */
@@ -101,21 +77,6 @@ header img {
     flex: 1; /* Ensures the text takes up the remaining space */
     font-family: Monaco, monospace; /* Matches your current font style */
     line-height: 1.6; /* Adjusts text spacing for better readability */
-}
-@media (max-width: 768px) {
-    #companyBio {
-      flex-direction: column; /* Stacks the image above the text */
-      align-items: center; /* Centers the content */
-    }
-  
-    #companyBio img {
-      width: 60%; /* Resize the image for mobile */
-      margin-bottom: 20px; /* Add spacing below the image */
-    }
-  
-    #companyBio p {
-      text-align: center; /* Centers the text for readability */
-    }
 }
 
 #missionStatement {
