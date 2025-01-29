@@ -31,10 +31,9 @@ header {
 header img {
     object-fit: cover; /* Ensures the image scales without distortion */
     flex-shrink: 0; /* Prevents the image from resizing */
-    height: auto; /* Maintain aspect ratio */
+    height: 70px; /* Maintain aspect ratio */
     vertical-align: middle;
-    margin-right: 2%;
-    padding-left: 17%;
+    padding-left: 23%;
 }
 
 #menuItems {
@@ -49,16 +48,6 @@ header img {
   
 #menuItems li:hover {
     color: #007BFF;
-}
-
-#companyBio img {
-    object-fit: cover; /* Ensures the image scales without distortion */
-    border-radius: 10%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex-shrink: 0; /* Prevents the image from resizing */
-    width: 18%; /* Set the image width as a percentage */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 15px; /* Optional: Round the edges */
 }
 @media (max-width: 768px) {
     header {
@@ -83,6 +72,16 @@ header img {
         margin-bottom: 10px; /* Adds spacing below the logo */
         height: 40px; /* Reduces logo size for smaller screens */
     }
+}
+
+#companyBio img {
+    object-fit: cover; /* Ensures the image scales without distortion */
+    border-radius: 10%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Prevents the image from resizing */
+    width: 18%; /* Set the image width as a percentage */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Optional: Round the edges */
 }
 
 #companyBio {
