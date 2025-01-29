@@ -31,7 +31,7 @@ header {
 header img {
     object-fit: cover; /* Ensures the image scales without distortion */
     flex-shrink: 0; /* Prevents the image from resizing */
-    height: 40px; /* Maintain aspect ratio */
+    height: 70px; /* Maintain aspect ratio */
     vertical-align: middle;
     padding-left: 23%;
 }
